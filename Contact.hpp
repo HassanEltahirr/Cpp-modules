@@ -10,20 +10,16 @@ class Contact
         int phonenumber;
         int darkestsecret;
     public:
-        Contact()
-        {
-            firstname = "";
-            lastname = "";
-            nickname = "";
-            phonenumber = 0;
-            darkestsecret = 0;
-        }
-        Contact(string firstname,string lastname,string nickname,int phonenumber,int darkestsecret)
-        {
-            this->firstname = firstname;
-            this->lastname = lastname;
-            this->nickname = nickname;
-            this->phonenumber = phonenumber;
-            this->darkestsecret =darkestsecret;
-        }
-}
+        Contact();
+        Contact(string firstname,string lastname,string nickname,int phonenumber,int darkestsecret);
+        void setFirstName(std::string name);
+        std::string getFirstName();
+        void setLastName(std::string name);
+        std::string getNickName();
+        int getDarkestSecret();
+        void setDarkestSecret(int secret);
+        std::string getLastName();
+        void setNickName(std::string name);
+        void setPhoneNumber(int number);
+        int getPhoneNumber();
+};
