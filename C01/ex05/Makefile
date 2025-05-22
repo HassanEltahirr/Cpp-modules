@@ -1,17 +1,18 @@
-NAME = phonebooks
 CXX = c++
+
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+
+NAME = harlFilter
+
 SRCS = main.cpp \
-       Contact.cpp
+		Harl.cpp
+
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
-
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 clean:
 	rm -f $(OBJS)
@@ -21,4 +22,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean all re
+.PHONY: all clean fclean re

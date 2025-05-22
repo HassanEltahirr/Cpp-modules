@@ -1,9 +1,11 @@
 {
     "files.associations": {
-        "iostream": "cpp",
-        "__bit_reference": "cpp",
         "__config": "cpp",
         "__debug": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "string": "cpp",
+        "__bit_reference": "cpp",
         "__errc": "cpp",
         "__hash_table": "cpp",
         "__locale": "cpp",
@@ -22,8 +24,6 @@
         "complex": "cpp",
         "cstdarg": "cpp",
         "cstddef": "cpp",
-        "cstdint": "cpp",
-        "cstdio": "cpp",
         "cstdlib": "cpp",
         "cstring": "cpp",
         "ctime": "cpp",
@@ -44,7 +44,6 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "string": "cpp",
         "string_view": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
@@ -62,14 +61,6 @@
         "concepts": "cpp",
         "memory": "cpp",
         "type_traits": "cpp",
-        "algorithm": "cpp",
-        "fstream": "cpp",
-        "iomanip": "cpp",
-        "stack": "cpp",
-        "deque": "cpp",
-        "memory_resource": "cpp",
-        "__undef_macros": "cpp",
-        "functional": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "disabled"
+        "algorithm": "cpp"
+    }
 }
