@@ -1,10 +1,9 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address -g3
 
-NAME = Claptrap
+NAME = Animal
 
-SRCS = main.cpp ScavTrap.cpp ClapTrap.cpp
-
+SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)

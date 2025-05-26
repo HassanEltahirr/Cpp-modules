@@ -2,24 +2,14 @@
 #include <fstream> 
 #include <string>
 #include <iostream>
-#include "ScavTrap.hpp" // <-- this also includes ClapTrap.hpp again
+#include "Dog.hpp"
+#include "Cat.hpp"
 
-int main( void ) 
+int main()
 {
-    ClapTrap claptrap("ClapTrap");
-    ScavTrap scavtrap("ScavTrap");
-
-    claptrap.attack("target1");
-    scavtrap.attack("target2");
-
-    claptrap.takeDamage(5);
-    scavtrap.takeDamage(10);
-
-    claptrap.beRepaired(3);
-    scavtrap.beRepaired(5);
-
-    scavtrap.guardGate();
-
+    const Animal* j = new Dog();
+    const Animal* i = new Cat();
+    delete j;
+    delete i;
     return 0;
 }
-// #endif // CLAPTRAP_HPP
